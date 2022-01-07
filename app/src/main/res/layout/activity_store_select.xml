@@ -38,9 +38,10 @@
         android:layout_height="375dp"
         android:background="@drawable/square3"
         android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/background_view"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/background_view"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,10 +56,21 @@
         app:layout_constraintBottom_toTopOf="@id/background_view2"
         />
 
+
+    <Button
+        android:id="@+id/temp"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="안녕"
+        app:layout_constraintTop_toTopOf="@id/background_view2"
+        app:layout_constraintLeft_toLeftOf="@id/background_view2"
+        app:layout_constraintRight_toRightOf="@id/background_view2"/>
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signup_button"
+        android:id="@+id/store_add_button"
         android:text="+ 매장 추가하기"
         android:textStyle="bold"
         android:textSize="17dp"

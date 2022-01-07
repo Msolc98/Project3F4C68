@@ -22,16 +22,16 @@ class MainActivity : AppCompatActivity() {
             if (id.equals("admin")){
 
 
-                var intent = Intent(this,StoreSelectActivity::class.java)
-                startActivity(intent)}
+                var goToStoreSelectIntent = Intent(this,StoreSelectActivity::class.java)
+                startActivity(goToStoreSelectIntent)}
             else
                 Toast.makeText(this,id,Toast.LENGTH_SHORT).show()
 
         }
 
         signup_button.setOnClickListener{
-            var intent = Intent(this,SignupActivity::class.java)
-            startActivity(intent)
+            var goToSignupIntent = Intent(this,SignupActivity::class.java)
+            startActivity(goToSignupIntent)
         }
 
     }
